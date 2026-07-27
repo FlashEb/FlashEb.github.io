@@ -1,181 +1,409 @@
-<!DOCTYPE HTML>
-<!--
-	Hyperspace by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-		<title>Hyperspace by HTML5 UP</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>Elijah Babayemi — Computer Science Student &amp; Software Engineer</title>
+	<meta name="author" content="Elijah Babayemi" />
+	<meta name="description" content="Elijah Babayemi — Computer Science student at Berea College with internship experience in software engineering, cloud documentation, and AI evaluation at Leidos, Runestone Academy, and Outlier." />
 
-		<!-- Sidebar -->
-			<section id="sidebar">
-				<div class="inner">
-					<nav>
-						<ul>
-							<li><a href="#intro">Welcome</a></li>
-							<li><a href="#one">Who I are</a></li>
-							<li><a href="#two">What I do</a></li>
-							<li><a href="#three">Get in touch</a></li>
-						</ul>
-					</nav>
-				</div>
-			</section>
+	<!-- Social link previews -->
+	<meta property="og:type" content="website" />
+	<meta property="og:title" content="Elijah Babayemi — Computer Science Student & Software Engineer" />
+	<meta property="og:description" content="CS student with experience across software engineering, cloud documentation, and AI evaluation. Building a voice modulator and an automated trading bot." />
+	<meta property="og:url" content="https://flasheb.github.io/" />
+	<meta property="og:image" content="https://flasheb.github.io/images/headshot.jpg" />
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="theme-color" content="#20232b" />
 
-		<!-- Wrapper -->
-			<div id="wrapper">
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
 
-				<!-- Intro -->
-					<section id="intro" class="wrapper style1 fullscreen fade-up">
-						<div class="inner">
-							<h1>Elijah Babayemi</h1>
-							<p> Welcome to my website. My name is Elijah Babayemi and I am a Senior from Berea College. I am a Computer Science major that is passionate about web development and design.</p>
-							<ul class="actions">
-								<li><a href="#one" class="button scrolly">Learn more</a></li>
-							</ul>
-						</div>
-					</section>
+	<style>
+		:root{
+			--bg:#20232b;
+			--panel:#272b34;
+			--panel-2:#2e333e;
+			--line:rgba(255,255,255,.08);
+			--txt:#eef0f4;
+			--muted:#969cac;
+			--muted-2:#7b8294;
+			--amber:#f6b93b;
+			--amber-2:#f5a623;
+			--amber-ink:#20232b;
+			--radius:18px;
+			--maxw:1160px;
+		}
+		*{box-sizing:border-box;margin:0;padding:0}
+		html{scroll-behavior:smooth}
+		body{font-family:'Inter',system-ui,sans-serif;background:var(--bg);color:var(--txt);line-height:1.65;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+		body::before{content:'';position:fixed;inset:0;z-index:-1;pointer-events:none;background:
+			radial-gradient(900px 600px at 88% -8%,rgba(246,185,59,.08),transparent 60%),
+			radial-gradient(700px 500px at -5% 10%,rgba(255,255,255,.03),transparent 55%);}
+		h1,h2,h3,.display{font-family:'Space Grotesk',sans-serif;line-height:1.08;letter-spacing:-.02em;font-weight:700}
+		a{color:inherit;text-decoration:none}
+		img{max-width:100%;display:block}
+		.wrap{max-width:var(--maxw);margin:0 auto;padding:0 clamp(20px,5vw,44px)}
+		.section{padding:clamp(72px,11vh,120px) 0}
+		.amber{color:var(--amber)}
+		.bar{width:44px;height:3px;background:var(--amber);border-radius:2px;margin-bottom:22px}
+		.eyebrow{display:inline-flex;align-items:center;gap:10px;font-size:.78rem;letter-spacing:.2em;text-transform:uppercase;color:var(--amber);font-weight:600;margin-bottom:16px}
+		.eyebrow::before{content:'';width:22px;height:2px;background:var(--amber)}
+		.section-title{font-size:clamp(1.9rem,4vw,2.7rem);margin-bottom:14px}
+		.lead{color:var(--muted);font-size:1.04rem;max-width:660px}
 
-				<!-- One -->
-					<section id="one" class="wrapper style2 spotlights">
-						<section>
-							<a href="#" class="image"><img src="images/IMG_1982.jpg" alt="" data-position="center center" /></a>
-							<div class="content">
-								<div class="inner">
-									<h2>Who I am</h2>
-									<p>My name is Elijah Babayemi, a Computer Science student at Berea College.</p>
-									<ul class="actions">
-										
-									</ul>
-								</div>
-							</div>
-						</section>
-						<section>
-							<a href="#" class="image"><img src="images/Berea-College.jpg" alt="" data-position="top center" /></a>
-							<div class="content">
-								<div class="inner">
-									<h2>Information about Berea College</h2>
-									<p>
-										Berea College, located in Berea, Kentucky, is a unique institution known for its commitment to providing a high-quality education to students with limited financial means. As a student here, I benefit from Berea's Tuition Promise Scholarship, which ensures that no student pays tuition. The college is deeply rooted in its mission of service, offering a rigorous academic experience combined with a strong emphasis on community and social justice. Berea College also provides a rich learning environment, where students engage in work-study programs that prepare them for future careers while contributing to the campus community.</p>
-									<ul class="actions">
-										
-									</ul>
-								</div>
-							</div>
-						</section>
-						<section>
-							
+		.progress{position:fixed;top:0;left:0;height:3px;width:0;z-index:100;background:var(--amber)}
 
-				<!-- Two -->
-					<section id="two" class="wrapper style3 fade-up">
-						<div class="inner">
-							<h2>What I do</h2>
-							<p>I am a beginner in Python, but am planning to learn new skills to become a software engineer. I am ready to learn and become adept at coding for new career prospects. </p>
-							<div class="features">
-								<section>
-									<span class="icon solid major fa-code"></span>
-									<h3>Quality Evaluation</h3>
-									<p>Experience as an Internet Rater and Writing Quality Evaluator, ensuring the accuracy, usability, and functionality of web content, as well as reviewing AI-generated writing for quality and correctness.</p>
-								</section>
-								<section>
-									<span class="icon solid major fa-lock"></span>
-									<h3>Software & Web Technologies</h3>
-									<p>Skilled in using tools like Autodesk Eagle for electronic design and Google Maps API for web-based geolocation services. I also manage version control using Git and GitHub to collaborate on projects efficiently.</p>
-								</section>
-							
-								
-							</div>
-							<ul class="actions">
-								<li><a href="generic.html" class="button">View Resume</a></li>
-							</ul>
-						</div>
-					</section>
+		/* nav */
+		nav{position:fixed;top:0;left:0;right:0;z-index:90;display:flex;align-items:center;justify-content:space-between;padding:18px clamp(20px,5vw,44px);transition:.35s}
+		nav.scrolled{background:rgba(32,35,43,.82);backdrop-filter:blur(12px);border-bottom:1px solid var(--line);padding-top:13px;padding-bottom:13px}
+		.logo{font-family:'Space Grotesk';font-weight:700;font-size:1.15rem;display:flex;align-items:center;gap:11px}
+		.logo .mark{width:38px;height:38px;border-radius:11px;background:var(--amber);color:var(--amber-ink);display:grid;place-items:center;font-weight:700}
+		.nav-links{display:flex;gap:26px;align-items:center}
+		.nav-links a{color:var(--muted);font-size:.92rem;font-weight:500;transition:.2s}
+		.nav-links a:hover{color:var(--txt)}
+		.nav-cta{padding:9px 18px;border-radius:10px;background:var(--amber);color:var(--amber-ink)!important;font-weight:600}
+		.nav-cta:hover{background:var(--amber-2)}
+		.burger{display:none;font-size:1.4rem;background:none;border:0;color:var(--txt);cursor:pointer}
 
-				<!-- Three -->
-					<section id="three" class="wrapper style1 fade-up">
-						<div class="inner">
-							<h2>Get in touch</h2>
-							<p>
-								To get in touch, feel free to use the contact form below or connect with me on social media.</p>
-							<div class="split style1">
-								<section>
-									<form method="post" action="#">
-										<div class="fields">
-											<div class="field half">
-												<label for="name">Name</label>
-												<input type="text" name="name" id="name" />
-											</div>
-											<div class="field half">
-												<label for="email">Email</label>
-												<input type="text" name="email" id="email" />
-											</div>
-											<div class="field">
-												<label for="message">Message</label>
-												<textarea name="message" id="message" rows="5"></textarea>
-											</div>
-										</div>
-										<ul class="actions">
-											<li><a href="" class="button submit">Send Message</a></li>
-										</ul>
-									</form>
-								</section>
-								<section>
-									<ul class="contact">
-										<li>
-											<h3>Address</h3>
-											<span>101 Chestnut Street<br />
-											Berea, KY 40403<br />
-											USA</span>
-										</li>
-										<li>
-											<h3>Email</h3>
-											<a href="#">elijahbabayemi@gmail.com</a>
-										</li>
-										<li>
-											<h3>Phone</h3>
-											<span>(404) 422-8939</span>
-										</li>
-										<li>
-											<h3>Social</h3>
-											<ul class="icons">
-												<li><a href="https://x.com/eb_flash" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-												<li><a href="https://www.facebook.com/profile.php?id=100012526693491" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-												<li><a href="https://github.com/FlashEb" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-												<li><a href="" class="https://www.instagram.com/eli.jbx/?hl=en"><span class="label">Instagram</span></a></li>
-												<li><a href="https://www.linkedin.com/in/elijah-babayemi-a1836b279/" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
-											</ul>
-										</li>
-									</ul>
-								</section>
-							</div>
-						</div>
-					</section>
+		/* hero */
+		.hero{min-height:100vh;display:flex;align-items:center;padding:120px 0 60px}
+		.hero-grid{display:grid;grid-template-columns:.82fr 1.18fr;gap:52px;align-items:center;width:100%}
+		.photo-card{position:relative;border-radius:var(--radius);overflow:hidden;border:1px solid var(--line);background:var(--panel);box-shadow:0 30px 70px rgba(0,0,0,.35)}
+		.photo-card img{width:100%;height:100%;object-fit:cover;aspect-ratio:1/1.1}
+		.photo-card::after{content:'';position:absolute;left:0;bottom:0;width:100%;height:38%;background:linear-gradient(transparent,rgba(20,22,28,.55))}
+		.photo-tag{position:absolute;left:16px;bottom:16px;z-index:2;display:flex;align-items:center;gap:9px;background:rgba(32,35,43,.85);backdrop-filter:blur(8px);border:1px solid var(--line);border-radius:999px;padding:7px 14px;font-size:.82rem;font-weight:500}
+		.photo-tag .dot{width:9px;height:9px;border-radius:50%;background:var(--amber);box-shadow:0 0 10px var(--amber)}
+		.hero h1{font-size:clamp(2.7rem,6.5vw,4.6rem);margin:6px 0 14px}
+		.hero .role{font-size:clamp(1.05rem,2.2vw,1.35rem);color:var(--txt);font-weight:600;margin-bottom:18px}
+		.hero p.intro{color:var(--muted);max-width:540px;margin-bottom:26px;font-size:1.05rem}
+		.pills{display:flex;flex-wrap:wrap;gap:9px;margin-bottom:28px}
+		.pill{font-size:.8rem;font-weight:500;color:var(--txt);background:var(--panel);border:1px solid var(--line);border-radius:999px;padding:7px 14px}
+		.pill i{color:var(--amber);margin-right:6px}
+		.btn-row{display:flex;flex-wrap:wrap;gap:13px;margin-bottom:30px}
+		.btn{display:inline-flex;align-items:center;gap:10px;padding:13px 24px;border-radius:11px;font-weight:600;font-size:.96rem;transition:.22s;cursor:pointer;border:1px solid transparent}
+		.btn-primary{background:var(--amber);color:var(--amber-ink)}
+		.btn-primary:hover{background:var(--amber-2);transform:translateY(-2px)}
+		.btn-ghost{background:transparent;border:1px solid var(--line);color:var(--txt)}
+		.btn-ghost:hover{border-color:var(--amber);color:var(--amber);transform:translateY(-2px)}
+		.socials{display:flex;gap:12px}
+		.socials a{width:44px;height:44px;border-radius:12px;display:grid;place-items:center;background:var(--panel);border:1px solid var(--line);color:var(--muted);font-size:1.05rem;transition:.22s}
+		.socials a:hover{color:var(--amber);border-color:var(--amber);transform:translateY(-2px)}
 
+		/* about */
+		.about-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:48px;align-items:start}
+		.about-copy p+p{margin-top:16px}
+		.side-photo{border-radius:var(--radius);overflow:hidden;border:1px solid var(--line)}
+		.side-photo img{width:100%;object-fit:cover;aspect-ratio:4/3}
+		.stat-row{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:18px}
+		.stat{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:18px}
+		.stat .n{font-family:'Space Grotesk';font-size:1.5rem;font-weight:700;color:var(--amber)}
+		.stat .l{font-size:.8rem;color:var(--muted)}
+		.edu{margin-top:22px;background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:18px 20px;display:flex;gap:14px;align-items:flex-start}
+		.edu .ico{width:42px;height:42px;flex:0 0 42px;border-radius:11px;background:rgba(246,185,59,.14);color:var(--amber);display:grid;place-items:center}
+		.edu .ttl{font-weight:600}.edu .sub{color:var(--muted);font-size:.9rem}
+		.coursework{display:flex;flex-wrap:wrap;gap:8px;margin-top:22px}
+		.chip{font-size:.78rem;padding:6px 12px;border-radius:999px;background:var(--panel-2);border:1px solid var(--line);color:var(--muted)}
+
+		/* experience timeline */
+		.timeline{margin-top:44px;position:relative;padding-left:30px}
+		.timeline::before{content:'';position:absolute;left:8px;top:6px;bottom:6px;width:2px;background:var(--line)}
+		.tl-item{position:relative;padding:0 0 34px 22px}
+		.tl-item:last-child{padding-bottom:0}
+		.tl-item::before{content:'';position:absolute;left:-30px;top:5px;width:18px;height:18px;border-radius:50%;background:var(--bg);border:3px solid var(--amber)}
+		.tl-head{display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:6px}
+		.tl-role{font-family:'Space Grotesk';font-weight:700;font-size:1.18rem}
+		.tl-date{font-size:.84rem;color:var(--amber);font-weight:600;white-space:nowrap}
+		.tl-co{color:var(--txt);font-weight:600;font-size:.98rem;margin:2px 0 8px}
+		.tl-co .loc{color:var(--muted);font-weight:400}
+		.tl-item p{color:var(--muted);font-size:.96rem;max-width:720px}
+
+		/* cards */
+		.card-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px;margin-top:40px}
+		.card{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);padding:28px;transition:.25s}
+		.card:hover{transform:translateY(-5px);border-color:rgba(246,185,59,.4)}
+		.card .ico{width:52px;height:52px;border-radius:13px;display:grid;place-items:center;font-size:1.35rem;margin-bottom:18px;background:var(--panel-2);border:1px solid var(--line);color:var(--amber)}
+		.card h3{font-size:1.13rem;margin-bottom:9px}
+		.card p{color:var(--muted);font-size:.93rem}
+		.card.feature{background:var(--amber);border-color:var(--amber)}
+		.card.feature .ico{background:rgba(32,35,43,.15);border-color:rgba(32,35,43,.2);color:var(--amber-ink)}
+		.card.feature h3,.card.feature p{color:var(--amber-ink)}
+		.card.feature p{opacity:.85}
+
+		/* projects */
+		.proj-grid{display:grid;grid-template-columns:1fr 1fr;gap:22px;margin-top:40px}
+		.proj{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);padding:30px;display:flex;flex-direction:column;transition:.25s}
+		.proj:hover{transform:translateY(-5px);border-color:rgba(246,185,59,.4)}
+		.proj-top{display:flex;align-items:center;justify-content:space-between;margin-bottom:18px}
+		.proj-ico{width:54px;height:54px;border-radius:14px;display:grid;place-items:center;font-size:1.4rem;background:rgba(246,185,59,.14);color:var(--amber)}
+		.built{display:inline-flex;align-items:center;gap:7px;font-size:.74rem;font-weight:600;letter-spacing:.04em;color:var(--amber);background:rgba(246,185,59,.12);border:1px solid rgba(246,185,59,.28);padding:5px 11px;border-radius:999px}
+		.proj h3{font-size:1.35rem;margin-bottom:10px}
+		.proj p{color:var(--muted);font-size:.97rem}
+		.tags{display:flex;flex-wrap:wrap;gap:8px;margin:16px 0 22px}
+		.tag{font-size:.75rem;padding:5px 11px;border-radius:999px;background:var(--panel-2);border:1px solid var(--line);color:var(--muted)}
+		.proj-foot{margin-top:auto;display:flex;align-items:center;gap:14px}
+		.plink{display:inline-flex;align-items:center;gap:8px;color:var(--amber);font-weight:600;font-size:.9rem;transition:.2s}
+		.plink:hover{gap:12px}
+		.soon{display:inline-flex;align-items:center;gap:7px;color:var(--muted-2);font-size:.82rem;font-weight:500}
+		.soon .fa-clock{color:var(--amber)}
+
+		/* contact */
+		.contact-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:40px;margin-top:40px}
+		.form-card{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);padding:30px}
+		.field{margin-bottom:16px}
+		.field label{display:block;font-size:.84rem;color:var(--muted);margin-bottom:7px}
+		.field input,.field textarea{width:100%;background:var(--bg);border:1px solid var(--line);border-radius:11px;padding:13px 15px;color:var(--txt);font-family:inherit;font-size:.95rem;transition:.2s}
+		.field input:focus,.field textarea:focus{outline:none;border-color:var(--amber);box-shadow:0 0 0 3px rgba(246,185,59,.16)}
+		.field textarea{resize:vertical;min-height:120px}
+		.info-list{display:flex;flex-direction:column;gap:14px}
+		.info-item{display:flex;gap:15px;align-items:center;background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:17px;transition:.2s}
+		.info-item:hover{border-color:rgba(246,185,59,.4)}
+		.info-item .ico{width:44px;height:44px;flex:0 0 44px;border-radius:12px;display:grid;place-items:center;background:rgba(246,185,59,.14);color:var(--amber)}
+		.info-item .l{font-size:.76rem;color:var(--muted);text-transform:uppercase;letter-spacing:.1em}
+		.info-item .v{font-weight:500}
+
+		footer{border-top:1px solid var(--line);padding:32px 0;text-align:center;color:var(--muted);font-size:.9rem}
+		footer .fsoc{display:flex;justify-content:center;gap:20px;margin-bottom:14px}
+		footer .fsoc a{color:var(--muted);font-size:1.1rem;transition:.2s}
+		footer .fsoc a:hover{color:var(--amber)}
+
+		.reveal{opacity:0;transform:translateY(26px);transition:.6s cubic-bezier(.2,.7,.2,1)}
+		.reveal.in{opacity:1;transform:none}
+
+		@media(max-width:920px){
+			.hero-grid,.about-grid,.contact-grid,.proj-grid{grid-template-columns:1fr;gap:36px}
+			.hero{padding-top:120px;min-height:auto}
+			.photo-card{max-width:380px;margin:0 auto}
+		}
+		@media(max-width:680px){
+			.nav-links{position:fixed;inset:0 0 0 auto;width:min(80vw,330px);flex-direction:column;justify-content:center;align-items:flex-start;gap:22px;padding:40px;background:rgba(32,35,43,.97);backdrop-filter:blur(14px);border-left:1px solid var(--line);transform:translateX(100%);transition:.35s}
+			.nav-links.open{transform:none}
+			.nav-links a{font-size:1.1rem}
+			.burger{display:block;z-index:95}
+			.stat-row{grid-template-columns:1fr}
+			.tl-date{white-space:normal}
+		}
+		@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.reveal{opacity:1;transform:none}}
+	</style>
+</head>
+<body id="top">
+	<div class="progress" id="progress"></div>
+
+	<!-- NAV -->
+	<nav id="nav">
+		<a href="#top" class="logo"><span class="mark">EB</span>Elijah Babayemi</a>
+		<div class="nav-links" id="navlinks">
+			<a href="#about">About</a>
+			<a href="#experience">Experience</a>
+			<a href="#skills">Skills</a>
+			<a href="#projects">Projects</a>
+			<a href="#contact">Contact</a>
+			<a href="Elijah-Babayemi-Resume.pdf" target="_blank" rel="noopener" class="nav-cta">Resume</a>
+		</div>
+		<button class="burger" id="burger" aria-label="Menu"><i class="fa-solid fa-bars"></i></button>
+	</nav>
+
+	<!-- HERO -->
+	<header class="hero wrap">
+		<div class="hero-grid">
+			<div class="photo-card reveal">
+				<!-- Main photo: save your headshot as images/headshot.jpg. Falls back to the old photo until then. -->
+				<img src="images/headshot.jpg" onerror="this.onerror=null;this.src='images/IMG_1982.jpg'" alt="Portrait of Elijah Babayemi" />
+				<span class="photo-tag"><span class="dot"></span> Open to opportunities</span>
 			</div>
-
-		<!-- Footer -->
-			<footer id="footer" class="wrapper style1-alt">
-				<div class="inner">
-					<ul class="menu">
-						<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-					</ul>
+			<div class="reveal">
+				<span class="eyebrow">Computer Science · Berea College</span>
+				<h1>Elijah<br>Babayemi</h1>
+				<div class="role">I build software, document complex systems, and solve hard problems.</div>
+				<p class="intro">Computer Science student at Berea College with internship experience spanning software engineering, cloud documentation, and AI evaluation — at Leidos, Runestone Academy, and Outlier. I adapt quickly and enjoy taking on whatever a team needs to ship.</p>
+				<div class="pills">
+					<span class="pill"><i class="fa-solid fa-code"></i>Software Engineering</span>
+					<span class="pill"><i class="fa-solid fa-file-lines"></i>Technical Documentation</span>
+					<span class="pill"><i class="fa-solid fa-robot"></i>AI / Machine Learning</span>
+					<span class="pill"><i class="fa-solid fa-cloud"></i>Cloud &amp; Systems</span>
 				</div>
-			</footer>
+				<div class="btn-row">
+					<a href="#experience" class="btn btn-primary"><i class="fa-solid fa-arrow-right"></i> See my experience</a>
+					<a href="Elijah-Babayemi-Resume.pdf" target="_blank" rel="noopener" class="btn btn-ghost"><i class="fa-solid fa-file-arrow-down"></i> Resume</a>
+				</div>
+				<div class="socials">
+					<a href="https://github.com/FlashEb" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+					<a href="https://www.linkedin.com/in/elijah-babayemi-a1836b279/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+					<a href="https://x.com/eb_flash" target="_blank" rel="noopener" aria-label="X"><i class="fa-brands fa-x-twitter"></i></a>
+					<a href="https://www.instagram.com/eli.jbx/?hl=en" target="_blank" rel="noopener" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+					<a href="mailto:elijahbabayemi@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+				</div>
+			</div>
+		</div>
+	</header>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+	<!-- ABOUT -->
+	<section id="about" class="section wrap">
+		<div class="about-grid">
+			<div class="about-copy reveal">
+				<div class="bar"></div>
+				<span class="eyebrow">About me</span>
+				<h2 class="section-title">A little about me</h2>
+				<p class="lead">I'm Elijah Babayemi, a Computer Science student at Berea College who likes building things that are genuinely useful and communicating clearly about how they work. My internships have taken me across software engineering, cloud documentation, and AI model evaluation — and I'm comfortable moving between them.</p>
+				<p class="lead">I pick up new tools quickly, dig into hard problems, and care about clean, reliable work — whether that's shipping a feature, restructuring a knowledge base, or stress-testing a model. I'm open to a range of roles where I can build, learn, and contribute.</p>
+				<div class="coursework">
+					<span class="chip">Software Design &amp; Implementation</span>
+					<span class="chip">Data Structures</span>
+					<span class="chip">AI &amp; Machine Learning</span>
+					<span class="chip">Compiler Design</span>
+					<span class="chip">Cybersecurity &amp; Ethics</span>
+					<span class="chip">Human-Centered Computing</span>
+				</div>
+			</div>
+			<div class="reveal">
+				<div class="side-photo"><img src="images/Berea-College.jpg" alt="Berea College campus" /></div>
+				<div class="stat-row">
+					<div class="stat"><div class="n">3</div><div class="l">Internships</div></div>
+					<div class="stat"><div class="n">100K+</div><div class="l">Users reached</div></div>
+					<div class="stat"><div class="n">Dec 2026</div><div class="l">Graduation</div></div>
+				</div>
+				<div class="edu">
+					<div class="ico"><i class="fa-solid fa-graduation-cap"></i></div>
+					<div>
+						<div class="ttl">Berea College — B.A. Computer Science, Minor in Communication</div>
+						<div class="sub">Aug 2022 – Dec 2026 · Berea, KY · Tuition Promise Scholarship ($176K) &amp; Gilman Scholar</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
 
-	</body>
+	<!-- EXPERIENCE -->
+	<section id="experience" class="section wrap">
+		<div class="reveal">
+			<div class="bar"></div>
+			<span class="eyebrow">Where I've worked</span>
+			<h2 class="section-title">Experience</h2>
+			<p class="lead">Internships across three very different teams — engineering, cloud documentation, and AI — that have made me a flexible, fast-learning contributor.</p>
+		</div>
+		<div class="timeline reveal">
+			<div class="tl-item">
+				<div class="tl-head"><span class="tl-role">Technology Enablement &amp; Technical Documentation Intern</span><span class="tl-date">May 2026 – Present</span></div>
+				<div class="tl-co">Leidos <span class="loc">· Remote</span></div>
+				<p>Partner with 10+ cloud engineers to document AWS and Azure architectures — authoring 20+ architecture overviews, implementation guides, and SOPs, and restructuring 25+ Confluence pages into standardized docs that cut article revision requests by ~20%.</p>
+			</div>
+			<div class="tl-item">
+				<div class="tl-head"><span class="tl-role">Software Engineer Intern</span><span class="tl-date">May 2025 – Aug 2025</span></div>
+				<div class="tl-co">Runestone Academy <span class="loc">· Remote</span></div>
+				<p>Designed, built, and verified interactive software components for an open-source platform serving 100K+ college CS students, resolved 50+ production defects through structured Git/GitHub workflows, and documented 6 components in PreTeXt, HTML, and XML.</p>
+			</div>
+			<div class="tl-item">
+				<div class="tl-head"><span class="tl-role">AI Model Evaluation Engineer</span><span class="tl-date">May 2024 – Aug 2024</span></div>
+				<div class="tl-co">Outlier <span class="loc">· Remote</span></div>
+				<p>Evaluated 500+ AI model outputs weekly and wrote 400+ structured and adversarial test cases to stress-test model behavior, identifying failure patterns and improving instruction-following reliability by ~20% across review cycles.</p>
+			</div>
+		</div>
+	</section>
+
+	<!-- SKILLS -->
+	<section id="skills" class="section wrap">
+		<div class="reveal">
+			<div class="bar"></div>
+			<span class="eyebrow">What I do</span>
+			<h2 class="section-title">Skills &amp; expertise</h2>
+			<p class="lead">A toolkit that spans building, documenting, and evaluating software.</p>
+		</div>
+		<div class="card-grid">
+			<div class="card feature reveal"><div class="ico"><i class="fa-solid fa-code"></i></div><h3>Software Development</h3><p>Python, C++, Lua, VBA, and TypeScript, with strong fundamentals in data structures, algorithms, compilers, and Git &amp; GitHub workflows.</p></div>
+			<div class="card reveal"><div class="ico"><i class="fa-solid fa-robot"></i></div><h3>AI &amp; Machine Learning</h3><p>Computer vision with PyTorch and YOLOv5, plus large-scale AI model evaluation — building test cases and improving model reliability.</p></div>
+			<div class="card reveal"><div class="ico"><i class="fa-solid fa-file-lines"></i></div><h3>Technical Documentation</h3><p>Architecture overviews, implementation guides, and SOPs — structuring knowledge bases in Confluence, Jira, PreTeXt, HTML, and XML.</p></div>
+			<div class="card reveal"><div class="ico"><i class="fa-solid fa-cloud"></i></div><h3>Cloud, Systems &amp; Security</h3><p>Hands-on with AWS and Azure environments and Linux, backed by cybersecurity &amp; ethics coursework — how systems run and stay secure.</p></div>
+		</div>
+	</section>
+
+	<!-- PROJECTS -->
+	<section id="projects" class="section wrap">
+		<div class="reveal">
+			<div class="bar"></div>
+			<span class="eyebrow">Portfolio</span>
+			<h2 class="section-title">Featured projects</h2>
+			<p class="lead">What I'm building right now. More on my <a href="https://github.com/FlashEb" target="_blank" rel="noopener" style="color:var(--amber)">GitHub</a>.</p>
+		</div>
+		<div class="proj-grid">
+			<!-- PROJECT 1: Voice Modulator -->
+			<div class="proj reveal">
+				<div class="proj-top">
+					<div class="proj-ico"><i class="fa-solid fa-wave-square"></i></div>
+					<span class="built"><i class="fa-solid fa-wand-magic-sparkles"></i> Built with Claude</span>
+				</div>
+				<h3>Voice Modulator</h3>
+				<p>An AI-assisted voice modulation app that transforms audio in real time — shifting pitch, tone, and character with adjustable effects for a clean, responsive experience.</p>
+				<div class="tags"><span class="tag">Audio Processing</span><span class="tag">AI-assisted</span><span class="tag">Real-time</span></div>
+				<div class="proj-foot">
+					<!-- TODO: replace the line below with a real link once the repo is uploaded:
+					     <a class="plink" href="REPO_URL" target="_blank" rel="noopener">View on GitHub <i class="fa-solid fa-arrow-right"></i></a> -->
+					<span class="soon"><i class="fa-solid fa-clock"></i> Repo coming soon</span>
+				</div>
+			</div>
+			<!-- PROJECT 2: Trading Bot -->
+			<div class="proj reveal">
+				<div class="proj-top">
+					<div class="proj-ico"><i class="fa-solid fa-chart-line"></i></div>
+					<span class="built"><i class="fa-solid fa-wand-magic-sparkles"></i> Built with Claude</span>
+				</div>
+				<h3>Trading Bot</h3>
+				<p>An automated paper-trading bot that runs multiple strategies against live market data, with broker execution through the Alpaca API and a replay engine for backtesting ideas before they go live.</p>
+				<div class="tags"><span class="tag">TypeScript</span><span class="tag">Node.js</span><span class="tag">Alpaca API</span><span class="tag">Algo Trading</span></div>
+				<div class="proj-foot">
+					<a class="plink" href="https://github.com/FlashEb/trading-bot" target="_blank" rel="noopener">View on GitHub <i class="fa-solid fa-arrow-right"></i></a>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- CONTACT -->
+	<section id="contact" class="section wrap">
+		<div class="reveal">
+			<div class="bar"></div>
+			<span class="eyebrow">Get in touch</span>
+			<h2 class="section-title">Let's work together</h2>
+			<p class="lead">Have an opportunity, a question, or an idea to build? Send a message and I'll get back to you.</p>
+		</div>
+		<div class="contact-grid">
+			<form class="form-card reveal" action="mailto:elijahbabayemi@gmail.com" method="post" enctype="text/plain">
+				<div class="field"><label for="name">Name</label><input id="name" name="name" type="text" required /></div>
+				<div class="field"><label for="email">Email</label><input id="email" name="email" type="email" required /></div>
+				<div class="field"><label for="message">Message</label><textarea id="message" name="message" required></textarea></div>
+				<button type="submit" class="btn btn-primary" style="width:100%;justify-content:center"><i class="fa-solid fa-paper-plane"></i> Send Message</button>
+			</form>
+			<div class="info-list reveal">
+				<a class="info-item" href="mailto:elijahbabayemi@gmail.com"><div class="ico"><i class="fa-solid fa-envelope"></i></div><div><div class="l">Email</div><div class="v">elijahbabayemi@gmail.com</div></div></a>
+				<div class="info-item"><div class="ico"><i class="fa-solid fa-location-dot"></i></div><div><div class="l">Location</div><div class="v">Berea, KY 40403 · USA</div></div></div>
+				<a class="info-item" href="https://github.com/FlashEb" target="_blank" rel="noopener"><div class="ico"><i class="fa-brands fa-github"></i></div><div><div class="l">GitHub</div><div class="v">@FlashEb</div></div></a>
+				<a class="info-item" href="https://www.linkedin.com/in/elijah-babayemi-a1836b279/" target="_blank" rel="noopener"><div class="ico"><i class="fa-brands fa-linkedin-in"></i></div><div><div class="l">LinkedIn</div><div class="v">Elijah Babayemi</div></div></a>
+			</div>
+		</div>
+	</section>
+
+	<footer>
+		<div class="fsoc">
+			<a href="https://github.com/FlashEb" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+			<a href="https://www.linkedin.com/in/elijah-babayemi-a1836b279/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+			<a href="https://x.com/eb_flash" target="_blank" rel="noopener" aria-label="X"><i class="fa-brands fa-x-twitter"></i></a>
+			<a href="https://www.instagram.com/eli.jbx/?hl=en" target="_blank" rel="noopener" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+		</div>
+		&copy; 2026 Elijah Babayemi. All rights reserved.
+	</footer>
+
+	<script>
+		const prog=document.getElementById('progress'),navEl=document.getElementById('nav');
+		addEventListener('scroll',()=>{
+			const h=document.documentElement,st=h.scrollTop,sh=h.scrollHeight-h.clientHeight;
+			prog.style.width=(st/sh*100)+'%';
+			navEl.classList.toggle('scrolled',st>40);
+		});
+		const burger=document.getElementById('burger'),links=document.getElementById('navlinks');
+		burger.addEventListener('click',()=>links.classList.toggle('open'));
+		links.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>links.classList.remove('open')));
+		const io=new IntersectionObserver((es)=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.08});
+		document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+	</script>
+</body>
 </html>
